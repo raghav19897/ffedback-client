@@ -1,11 +1,4 @@
-<div>Your insights to todays experience</div>
-<input type="range" min="0" max="100" value="0.5" (change)="sendResponse()" id="response">
-<google-chart #chart
-   [title]="title"
-   [type]="type"
-   [data]="data"
-   [columnNames]="columnNames"
-   [options]="options1"
-   [width]="width"
-   [height]="height">
-</google-chart>
+<p>{{question.question}}</p>
+<div *ngFor="let option of options">
+   <p (click)="sendResponse(option.id)">{{option.value}}</p>
+</div>
