@@ -22,6 +22,5 @@ export class AppComponent {
 
   sendResponse(id){
     this.httpClient.get("http://localhost:8080/response?optionId="+id).subscribe(data=>console.log(data));
-    // location.reload()
   }
 }
