@@ -1,5 +1,9 @@
-<p>{{question.question}}</p>
-<div *ngFor="let option of options">
-   <!-- <p (click)="sendResponse(option.id)">{{option.value}}</p> -->
-   <img src={{option.imageURL}} alt={{option.value}} (click)="sendResponse(option.id)">
-</div>
+<nav><img src="../assets/logo.png" width="250" alt="logo" id="logo"></nav>
+<main>
+   <div class="question flex">{{question.question}}</div>
+   <div class="options flex">
+      <div *ngFor="let option of options" >
+         <img src={{option.imageURL}} alt={{option.value}} width="100" (click)="sendResponse(option.id)">
+      </div>
+   </div>
+</main>

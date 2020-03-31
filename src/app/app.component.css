@@ -1,0 +1,25 @@
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    flex-direction: column;
+}
+
+.options{
+    flex-direction: row;
+}
+
+.options>div{
+    margin: 30px;
+    cursor: pointer;
+}
+
+#logo{
+    display: block;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 100px;
+}
