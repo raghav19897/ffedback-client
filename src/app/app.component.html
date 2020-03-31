@@ -1,4 +1,5 @@
 <p>{{question.question}}</p>
 <div *ngFor="let option of options">
-   <p (click)="sendResponse(option.id)">{{option.value}}</p>
+   <!-- <p (click)="sendResponse(option.id)">{{option.value}}</p> -->
+   <img src={{option.imageURL}} alt={{option.value}} (click)="sendResponse(option.id)">
 </div>
